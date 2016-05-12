@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "NetworkLib"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Pod third party library dependence demo"
 
   s.homepage     = "https://github.com/yoyokko/NetworkLibPod"
@@ -20,9 +20,9 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/yoyokko/NetworkLibPod.git", :tag => "#{s.version}" }
 
-  s.source_files  = "NetworkLib.h"
+  s.source_files  = "NetworkLib.h", "libNetworkLib.a"
 
-  s.framework = 'SystemConfiguration'
+  s.frameworks = 'SystemConfiguration', 'libNetworkLib'
   s.requires_arc = true
 
   s.dependency 'AFNetworking'
