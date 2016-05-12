@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "NetworkLib"
-  s.version      = "0.0.2"
+  s.version      = "0.0.4"
   s.summary      = "Pod third party library dependence demo"
 
   s.homepage     = "https://github.com/yoyokko/NetworkLibPod"
